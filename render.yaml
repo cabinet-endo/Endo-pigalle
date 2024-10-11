@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: cabinet-pigalle-endo
+    env: static
+    buildCommand: echo "Static site, no build required"
+    staticPublishPath: ./
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
