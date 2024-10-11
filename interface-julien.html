@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Julien</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interface Julien</h1>
+        <a href="index.html" class="back-button">Retour à l'accueil</a>
+        <section id="task-creation">
+            <h2>Créer une nouvelle tâche</h2>
+            <form id="new-task-form">
+                <input type="text" id="task-title" placeholder="Titre de la tâche" required>
+                <select id="task-recipient" required>
+                    <option value="Arnaud">Arnaud</option>
+                    <option value="Julien">Julien</option>
+                    <option value="Assistante">Assistante</option>
+                    <option value="Anne">Anne</option>
+                </select>
+                <select id="task-urgency" required>
+                    <option value="normal">Normal</option>
+                    <option value="urgent">Urgent</option>
+                </select>
+                <select id="task-sound" required>
+                    <option value="notification1.mp3">Son 1</option>
+                    <option value="notification2.mp3">Son 2</option>
+                    <option value="notification3.mp3">Son 3</option>
+                </select>
+                <input type="hidden" id="task-sender" value="Julien">
+                <button type="submit">Créer la tâche</button>
+            </form>
+        </section>
+        <section id="predefined-tasks">
+            <h2>Tâches prédéfinies</h2>
+            <div id="predefined-tasks-list"></div>
+            <button id="add-predefined-task">Ajouter une tâche prédéfinie</button>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/tasks.js"></script>
+</body>
+</html>
