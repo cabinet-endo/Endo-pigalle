@@ -1,0 +1,13 @@
+{
+    "name": "gestionnaire-de-taches-pigalle",
+    "version": "1.0.0",
+    "description": "Gestionnaire de tâches pour le cabinet Pigalle",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.1"
+    }
+}
